@@ -1,0 +1,35 @@
+{
+    "name": "@plitvice/ui",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "main": "./src/index.ts",
+    "types": "./dist/index.d.ts",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc -b && vite build",
+        "lint": "eslint .",
+        "preview": "vite preview"
+    },
+    "devDependencies": {
+        "@eslint/js": "catalog:",
+        "@types/node": "^22.13.10",
+        "@types/react": "catalog:",
+        "@types/react-dom": "catalog:",
+        "@vitejs/plugin-react": "catalog:",
+        "eslint": "catalog:",
+        "eslint-plugin-react-hooks": "catalog:",
+        "eslint-plugin-react-refresh": "catalog:",
+        "globals": "catalog:",
+        "typescript": "catalog:",
+        "typescript-eslint": "catalog:",
+        "vite": "catalog:",
+        "vite-plugin-dts": "catalog:",
+        "vite-tsconfig-paths": "catalog:"
+    },
+    "peerDependencies": {
+        "react": "catalog:",
+        "react-dom": "catalog:",
+        "styled-components": "catalog:"
+    }
+}
