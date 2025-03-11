@@ -11,7 +11,7 @@ async function createProject() {
             process.exit(1);
         }
         const projectPath = path.join('app', projectName);
-        const templateDir = path.join('package', 'template');
+        const templateDir = path.join('shared', 'template');
 
         if (existsSync(projectPath)) {
             console.error(`🚫 Project '${projectName}' already exists.`);
@@ -41,11 +41,11 @@ async function createProject() {
             let tsconfigContent = await readFile(tsconfigPath, 'utf8');
             tsconfigContent = tsconfigContent.replace(
                 /"@plitvice\/ui": \["..\/ui\/src"\]/g,
-                '"@plitvice/ui": ["../../package/ui/src"]'
+                '"@plitvice/ui": ["../../shared/ui/src"]'
             );
             tsconfigContent = tsconfigContent.replace(
                 /"@plitvice\/ui\/\*": \["..\/ui\/src\/\*"\]/g,
-                '"@plitvice/ui/*": ["../../package/ui/src/*"]'
+                '"@plitvice/ui/*": ["../../shared/ui/src/*"]'
             );
             await writeFile(tsconfigPath, tsconfigContent);
         }

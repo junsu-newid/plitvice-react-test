@@ -10,9 +10,9 @@
         "baseUrl": ".",
         "paths": {
             "@/*": ["src/*"],
-            // package path fixes can be required for the workspace
-            "@plitvice/ui": ["../ui/src"],
-            "@plitvice/ui/*": ["../ui/src/*"]
+            // shared path fixes can be required for the workspace
+            "@plitvice/ui": ["../../shared/ui/src"],
+            "@plitvice/ui/*": ["../../shared/ui/src/*"]
         },
 
         /* Bundler mode */

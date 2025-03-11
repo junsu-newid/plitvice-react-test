@@ -16,8 +16,8 @@
         "noUnusedParameters": true,
         "noFallthroughCasesInSwitch": true,
         "paths": {
-            "@plitvice/ui/*": ["./package/ui/src/*"],
-            "@plitvice/util/*": ["./package/util/src/*"]
+            "@plitvice/ui/*": ["./shared/ui/src/*"],
+            "@plitvice/util/*": ["./shared/util/src/*"]
         }
     },
     "exclude": ["node_modules"]

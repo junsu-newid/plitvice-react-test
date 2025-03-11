@@ -13,9 +13,11 @@
     },
     "dependencies": {
         "@plitvice/ui": "workspace:*",
+        "i18next": "catalog:",
         "jotai": "catalog:",
         "react": "catalog:",
         "react-dom": "catalog:",
+        "react-i18next": "catalog:",
         "react-router": "catalog:",
         "styled-components": "catalog:"
     },
