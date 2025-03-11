@@ -36,14 +36,19 @@ async function createProject() {
         packageJson.name = projectName;
         await writeFile(packageJsonPath, JSON.stringify(packageJson, null, 2));
 
-        // pnpm-workspace.yaml 수정
-        // const workspacePath = 'pnpm-workspace.yaml';
-        // const currentWorkspaceContent = await readFile(workspacePath, 'utf8');
-        // const updatedContent = currentWorkspaceContent.replace(
-        //     /package:\n(\s+- [^\n]+\n)*/,
-        //     (match) => `package:\n${match.slice('package:\n'.length)}    - '${projectPath}'\n`
-        // );
-        // await writeFile(workspacePath, updatedContent);
+        const tsconfigPath = path.join(projectPath, 'tsconfig.app.json');
+        if (existsSync(tsconfigPath)) {
+            let tsconfigContent = await readFile(tsconfigPath, 'utf8');
+            tsconfigContent = tsconfigContent.replace(
+                /"@plitvice\/ui": \["..\/ui\/src"\]/g,
+                '"@plitvice/ui": ["../../package/ui/src"]'
+            );
+            tsconfigContent = tsconfigContent.replace(
+                /"@plitvice\/ui\/\*": \["..\/ui\/src\/\*"\]/g,
+                '"@plitvice/ui/*": ["../../package/ui/src/*"]'
+            );
+            await writeFile(tsconfigPath, tsconfigContent);
+        }
 
         const rootPackageJsonPath = 'package.json';
         const rootPackageJson = JSON.parse(await readFile(rootPackageJsonPath, 'utf8'));
