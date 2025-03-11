@@ -11,7 +11,7 @@
         "prepare": "husky",
         "lint": "eslint .",
         "format": "prettier --write .",
-        "@plitvice/ui": "pnpm --filter @plitvice/ui"
+        "build:ui": "pnpm --filter @plitvice/ui build"
     },
     "author": "NEWID",
     "license": "ISC",
