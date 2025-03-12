@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { Button } from '@plitvice/ui';
 import { useTranslation } from 'react-i18next';
+import { CommonButton } from '@plitvice/ui';
 
 function App() {
     const { t } = useTranslation();
@@ -10,9 +10,9 @@ function App() {
             <a href="https://www.its-newid.com/" target="_blank">
                 <NewidTitle>NEWID</NewidTitle>
             </a>
-            <Button primary size="lg">
+            <CommonButton size="lg" type="fill">
                 {t('common.welcome')}
-            </Button>
+            </CommonButton>
         </Container>
     );
 }
