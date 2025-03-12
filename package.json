@@ -11,8 +11,7 @@
         "prepare": "husky",
         "lint": "eslint .",
         "format": "prettier --write .",
-        "build:ui": "pnpm --filter @plitvice/ui build",
-        "paro": "pnpm --filter paro run dev"
+        "build:ui": "pnpm --filter @plitvice/ui build"
     },
     "author": "NEWID",
     "license": "ISC",

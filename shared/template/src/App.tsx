@@ -1,18 +1,16 @@
 import styled from 'styled-components';
-import { Button } from '@plitvice/ui';
 import { useTranslation } from 'react-i18next';
+import { CommonButton } from '@plitvice/ui';
 
 function App() {
     const { t } = useTranslation();
 
     return (
         <Container>
-            <a href="https://www.its-newid.com/" target="_blank">
-                <NewidTitle>NEWID</NewidTitle>
-            </a>
-            <Button primary size="lg">
+            <NewidTitle>NEWID</NewidTitle>
+            <CommonButton size="lg" variant="stroke">
                 {t('common.welcome')}
-            </Button>
+            </CommonButton>
         </Container>
     );
 }

@@ -41,11 +41,11 @@ async function createProject() {
             let tsconfigContent = await readFile(tsconfigPath, 'utf8');
             tsconfigContent = tsconfigContent.replace(
                 /"@plitvice\/ui": \["..\/ui\/src"\]/g,
-                '"@plitvice/ui": ["../../shared/ui/src"]'
+                '"@plitvice/ui": ["../../shared/ui/src"]',
             );
             tsconfigContent = tsconfigContent.replace(
                 /"@plitvice\/ui\/\*": \["..\/ui\/src\/\*"\]/g,
-                '"@plitvice/ui/*": ["../../shared/ui/src/*"]'
+                '"@plitvice/ui/*": ["../../shared/ui/src/*"]',
             );
             await writeFile(tsconfigPath, tsconfigContent);
         }
