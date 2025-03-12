@@ -27,6 +27,7 @@
         "eslint-plugin-react-refresh": "catalog:",
         "husky": "catalog:",
         "lint-staged": "catalog:",
+        "prettier": "catalog:",
         "typescript": "catalog:",
         "typescript-eslint": "catalog:"
     },

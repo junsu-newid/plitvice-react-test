@@ -116,6 +116,9 @@ importers:
       lint-staged:
         specifier: 'catalog:'
         version: 15.4.3
+      prettier:
+        specifier: 'catalog:'
+        version: 3.5.3
       typescript:
         specifier: 'catalog:'
         version: 5.8.2
