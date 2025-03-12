@@ -1,0 +1,10 @@
+{
+    "common": {
+        "welcome": "Welcome",
+        "hello": "Hello"
+    },
+    "button": {
+        "save": "Save",
+        "cancel": "Cancel"
+    }
+}
