@@ -12,6 +12,8 @@ function App() {
     console.log('사랑한다고');
     console.log('말해');
     console.log('말해에줘요');
+    console.log('해야');
+    console.log('');
     console.log('');
 
     return (
