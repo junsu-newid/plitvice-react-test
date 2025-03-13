@@ -10,7 +10,7 @@ function App() {
     console.log('tell me');
     console.log('나를');
     console.log('사랑한다고');
-    console.log('');
+    console.log('말해');
     console.log('');
     console.log('');
 
