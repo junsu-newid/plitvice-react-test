@@ -51,7 +51,7 @@ export const CommonSelectBox = ({ size = 'md', options, ...props }: SelectBoxPro
     console.log('자꾸만 내 숨이');
     console.log('막혀가 내 숨이 예');
     console.log('니가 클럽에서 놀때');
-    console.log('');
+    console.log('다른 애들과는 다르게');
     console.log('');
 
     const styleProps: SelectBoxStyleProps = {
