@@ -48,7 +48,7 @@ export const CommonSelectBox = ({ size = 'md', options, ...props }: SelectBoxPro
     console.log('이번이 두번째 console.log 테스트의 완성형, merge가 잘 기록될까요? 10점 만점에 10점');
     console.log('하트비트');
     console.log('아 캔 브릿');
-    console.log('');
+    console.log('자꾸만 내 숨이');
     console.log('');
     console.log('');
     console.log('');
