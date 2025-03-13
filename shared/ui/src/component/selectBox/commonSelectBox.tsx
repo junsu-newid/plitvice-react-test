@@ -46,6 +46,7 @@ export const CommonSelectBox = ({ size = 'md', options, ...props }: SelectBoxPro
     const [selectedValue, setSelectedValue] = useState('');
     console.log('이번이 두번째 console.log 테스트, merge가 잘 기록될까요?');
     console.log('이번이 두번째 console.log 테스트의 완성형, merge가 잘 기록될까요? 10점 만점에 10점');
+    console.log('하트비트');
 
     const styleProps: SelectBoxStyleProps = {
         $enabledBG: theme.colors.white,
