@@ -13,7 +13,7 @@ function App() {
     console.log('말해');
     console.log('말해에줘요');
     console.log('해야');
-    console.log('');
+    console.log('숨참고');
     console.log('');
 
     return (
