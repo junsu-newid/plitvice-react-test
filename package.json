@@ -11,7 +11,9 @@
         "prepare": "husky",
         "lint": "eslint .",
         "format": "prettier --write .",
-        "build:ui": "pnpm --filter @plitvice/ui build"
+        "build:ui": "pnpm --filter @plitvice/ui build",
+        "ness": "pnpm --filter plitvice-ness-react run dev",
+        "ness:i": "pnpm --filter plitvice-ness-react install"
     },
     "author": "NEWID",
     "license": "ISC",
