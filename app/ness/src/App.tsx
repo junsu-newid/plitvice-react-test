@@ -7,9 +7,11 @@ function App() {
     console.log('거짓말');
     console.log('마지막 인사');
     console.log('하루하루');
-    console.log('');
-    console.log('');
-    console.log('');
+    console.log('tell me');
+    console.log('나를');
+    console.log('사랑한다고');
+    console.log('말해');
+    console.log('말해에줘요');
     console.log('');
 
     return (
