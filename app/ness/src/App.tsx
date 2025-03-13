@@ -14,7 +14,7 @@ function App() {
     console.log('말해에줘요');
     console.log('해야');
     console.log('숨참고');
-    console.log('');
+    console.log('러브다이브');
 
     return (
         <Container>
