@@ -16,7 +16,7 @@ function App() {
     console.log('숨참고');
     console.log('러브다이브');
     console.log('우우우');
-    console.log('러브다이브');
+    console.log('나나나나나');
 
     return (
         <Container>
