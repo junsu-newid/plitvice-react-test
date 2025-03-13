@@ -9,7 +9,7 @@ function App() {
     console.log('하루하루');
     console.log('tell me');
     console.log('나를');
-    console.log('');
+    console.log('사랑한다고');
     console.log('');
     console.log('');
     console.log('');
