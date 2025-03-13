@@ -41,22 +41,14 @@ async function createProject() {
             let tsconfigContent = await readFile(tsconfigPath, 'utf8');
             tsconfigContent = tsconfigContent.replace(
                 /"@plitvice\/ui": \["..\/ui\/src"\]/g,
-                '"@plitvice/ui": ["../../shared/ui/src"]'
+                '"@plitvice/ui": ["../../shared/ui/src"]',
             );
             tsconfigContent = tsconfigContent.replace(
                 /"@plitvice\/ui\/\*": \["..\/ui\/src\/\*"\]/g,
-                '"@plitvice/ui/*": ["../../shared/ui/src/*"]'
+                '"@plitvice/ui/*": ["../../shared/ui/src/*"]',
             );
             await writeFile(tsconfigPath, tsconfigContent);
         }
-
-        const rootPackageJsonPath = 'package.json';
-        const rootPackageJson = JSON.parse(await readFile(rootPackageJsonPath, 'utf8'));
-        if (!rootPackageJson.scripts) {
-            rootPackageJson.scripts = {};
-        }
-        rootPackageJson.scripts[projectName] = `pnpm --filter ${projectName} run dev`;
-        await writeFile(rootPackageJsonPath, JSON.stringify(rootPackageJson, null, 2));
 
         console.log('📦 Installing dependencies...');
         const { execSync } = await import('child_process');
