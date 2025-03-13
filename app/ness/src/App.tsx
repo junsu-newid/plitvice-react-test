@@ -6,7 +6,7 @@ function App() {
     const { t } = useTranslation();
     console.log('거짓말');
     console.log('마지막 인사');
-    console.log('');
+    console.log('하루하루');
     console.log('');
     console.log('');
     console.log('');
