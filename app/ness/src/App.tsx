@@ -8,7 +8,7 @@ function App() {
     console.log('마지막 인사');
     console.log('하루하루');
     console.log('tell me');
-    console.log('');
+    console.log('나를');
     console.log('');
     console.log('');
     console.log('');
