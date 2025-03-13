@@ -126,7 +126,7 @@ importers:
         specifier: 'catalog:'
         version: 8.26.0(eslint@9.21.0)(typescript@5.8.2)
 
-  app/paro:
+  app/ness:
     dependencies:
       '@plitvice/ui':
         specifier: workspace:*
