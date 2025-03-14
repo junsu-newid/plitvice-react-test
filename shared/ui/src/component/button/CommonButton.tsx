@@ -32,6 +32,7 @@ const StyledButton = styled.button<ButtonStyleProps>`
 `;
 
 export const CommonButton = ({ size = 'md', variant = 'fill', children, ref, ...props }: ButtonProps) => {
+    console.log('파도처럼');
     const styleProps: ButtonStyleProps = {
         $enabledBG: theme.colors.white,
         $enabledColor: theme.colors.grey60,

@@ -50,5 +50,8 @@
         "extends": [
             "plugin:storybook/recommended"
         ]
+    },
+    "dependencies": {
+        "uuid": "^11.1.0"
     }
 }
