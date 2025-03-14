@@ -195,9 +195,6 @@ importers:
 
   shared/ui:
     dependencies:
-      chromatic:
-        specifier: ^11.27.0
-        version: 11.27.0
       react:
         specifier: 'catalog:'
         version: 19.0.0
@@ -221,6 +218,9 @@ importers:
         specifier: ^8.6.4
         version: 8.6.4(storybook@8.6.4(prettier@3.5.3))
       '@storybook/addon-onboarding':
+        specifier: ^8.6.4
+        version: 8.6.4(storybook@8.6.4(prettier@3.5.3))
+      '@storybook/addon-themes':
         specifier: ^8.6.4
         version: 8.6.4(storybook@8.6.4(prettier@3.5.3))
       '@storybook/blocks':
@@ -247,6 +247,9 @@ importers:
       '@vitejs/plugin-react':
         specifier: 'catalog:'
         version: 4.3.4(vite@6.2.1(@types/node@22.13.10)(yaml@2.7.0))
+      chromatic:
+        specifier: ^11.27.0
+        version: 11.27.0
       eslint:
         specifier: 'catalog:'
         version: 9.21.0
@@ -835,6 +838,11 @@ packages:
 
   '@storybook/addon-outline@8.6.4':
     resolution: {integrity: sha512-28nAslKTy0zWMdxAZcipMDYrEp1TkXVooAsqMGY5AMXMiORi1ObjhmjTLhVt1dXp+aDg0X+M3B6PqoingmHhqQ==}
+    peerDependencies:
+      storybook: ^8.6.4
+
+  '@storybook/addon-themes@8.6.4':
+    resolution: {integrity: sha512-QVQ/lgRAZc1e4IvCh9ltB6fWn7Zs2Ftqw2THK0VqSXIO+umEhmzlEv6Myx8Xdea363JsfhVGQXdKAWpT1Q7O6g==}
     peerDependencies:
       storybook: ^8.6.4
 
@@ -3446,6 +3454,11 @@ snapshots:
   '@storybook/addon-outline@8.6.4(storybook@8.6.4(prettier@3.5.3))':
     dependencies:
       '@storybook/global': 5.0.0
+      storybook: 8.6.4(prettier@3.5.3)
+      ts-dedent: 2.2.0
+
+  '@storybook/addon-themes@8.6.4(storybook@8.6.4(prettier@3.5.3))':
+    dependencies:
       storybook: 8.6.4(prettier@3.5.3)
       ts-dedent: 2.2.0
 
