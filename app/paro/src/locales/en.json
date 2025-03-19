@@ -6,5 +6,12 @@
     "button": {
         "save": "Save",
         "cancel": "Cancel"
+    },
+    "sidebar": {
+        "menu0": "legal",
+        "menu1": "",
+        "menu2": "",
+        "menu3": "",
+        "menu4": ""
     }
 }

@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyle, theme } from '@plitvice/ui';
 import { I18nextProvider } from 'react-i18next';
-import i18n from '@/locale';
+import i18n from 'src/locales';
 import App from './App.tsx';
 
 createRoot(document.getElementById('root')!).render(
