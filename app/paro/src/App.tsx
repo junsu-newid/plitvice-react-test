@@ -1,9 +1,17 @@
+import { useEffect } from 'react';
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
 import { CommonButton } from '@plitvice/ui';
+import { fetchLegal } from '@/api/service/legal.ts';
 
 function App() {
     const { t } = useTranslation();
+
+    useEffect(() => {
+        fetchLegal('US').then((result) => {
+            console.log(result);
+        });
+    }, []);
 
     return (
         <Container>
