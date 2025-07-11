@@ -6,6 +6,7 @@ import { fetchLegal } from '@/api/service/legal.ts';
 
 function App() {
     const { t } = useTranslation();
+    // 11111111111
 
     useEffect(() => {
         fetchLegal('US').then((result) => {
